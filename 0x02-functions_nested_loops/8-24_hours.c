@@ -2,9 +2,7 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * jack_bauer - prints every min of the day of Jack Bauer from 00:00 to 23:59
  */
 void jack_bauer(void)
 {

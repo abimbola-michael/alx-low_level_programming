@@ -2,11 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_alphabet_x10 - print all alphabets 10 times
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char c;
 	int i;

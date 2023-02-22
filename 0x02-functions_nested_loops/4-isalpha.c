@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _isalpha - checks for alphabetic character
+ * @c: letter, lowercase or uppercase
+ * Return: 1 if c is a letter, lowercase or uppercase else 0.
  */
 int _isalpha(int c)
 {

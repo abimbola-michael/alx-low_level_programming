@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _islower - checka if character is lowercase
+ * @c: character
+ * Return: 1 if character is lowercase else 0.
  */
 int _islower(int c)
 {
