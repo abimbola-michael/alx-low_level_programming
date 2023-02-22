@@ -6,6 +6,7 @@
  * @n: input
  * Return: n if greater than or equal to 0 else -n.
  */
+
 int _abs(int n)
 {
 	if (n >= 0)
