@@ -2,11 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - prints a square
+ * main - prints number fro 1 to 100
  * Return: 0
  */
 int main(void)
 {
+	int i;
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 != 0)
