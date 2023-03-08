@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int check_palindrome(char *s, int i, int len);
-int strlen(char *s);
+int _strlen(char *s);
 
 /**
  * is_palindrome - function that returns 1 if
@@ -15,16 +15,16 @@ int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
-	return (check_palindrome(s, 0, strlen(s)));
+	return (check_palindrome(s, 0, _strlen(s)));
 }
 
 /**
- * strlen- function that counts string
+ * _strlen- function that counts string
  * @s: input
  * Return: int
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
