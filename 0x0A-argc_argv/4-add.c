@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
@@ -13,7 +14,7 @@ int check_num(char *str);
 
 int check_num(char *str)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	while (count < strlen(str))
 	{
