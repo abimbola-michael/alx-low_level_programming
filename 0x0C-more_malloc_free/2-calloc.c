@@ -4,26 +4,6 @@
 #include <stdio.h>
 
 /**
- * _memset - fill memory
- * @s: input
- * @c: input
- * @n: input
- * Return: void
- */
-
-char *_memset(char *s, char c, unsigned int n)
-{
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-	{
-		s[i] = c;
-	}
-
-	return (s);
-}
-
-/**
  * _calloc - function that allocates memory for an array using malloc
  * @nmemb: input
  * @size: input
@@ -34,17 +14,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 	unsigned int i;
-	int n;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	n = size * nmemb;
-	ptr = (char*)malloc(size * nmemb);
+	ptr = malloc(nmemb * size);
 
 	if (ptr == NULL)
 		return (NULL);
-	_memset(ptr, 0, nmemb * size);
+
+	for (i = 0; i < (nmemb * size); i++)
+		ptr[i] = 0;
 
 	return (ptr);
 }
+
