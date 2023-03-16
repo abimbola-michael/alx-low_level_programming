@@ -40,7 +40,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	n = size * nmemb;
-	ptr = malloc(size * nmemb);
+	ptr = (char*)malloc(size * nmemb);
 
 	if (ptr == NULL)
 		return (NULL);
