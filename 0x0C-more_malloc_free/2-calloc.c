@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * _memset - fill memory
