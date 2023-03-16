@@ -5,6 +5,7 @@
  * string_nconcat - function that concatenates two strings
  * @s1: input
  * @s2: input
+ * @n: input
  * Return: char
  */
 
