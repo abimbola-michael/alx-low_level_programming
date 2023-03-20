@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * dog - dog struct
+ * struct dog - dog struct
  * @name: input char pointer
  * @age: input float
  * @owner: input char pointer
