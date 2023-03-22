@@ -1,4 +1,5 @@
 #include "3-cal.h"
+#include <stdlib.h>
 
 /**
  * op_add - add numbers
