@@ -2,7 +2,7 @@
 
 /**
  * hash_table_create - a function that creates a hash table.
- * @size:  is the size of the array
+ * @size: is the size of the array
  * Return: a pointer to the newly created hash table of NULL
  */
 
@@ -17,7 +17,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	hasht->size = size;
-	hasht->array = malloc(sizeof(hash_table_t *) * size);
+	hasht->array = malloc(sizeof(hash_node_t *) * size);
 
 	if (hasht->array == NULL)
 		return (NULL);
